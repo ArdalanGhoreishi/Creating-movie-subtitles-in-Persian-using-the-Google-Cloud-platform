@@ -1,0 +1,13 @@
+<center>
+<a href="{{ url_for('download', filename="test.fa.srt") }}">Persian SRT file</a>
+<a href="{{ url_for('download', filename="test.en-US.srt") }}">English SRT file</a>
+<br><a href="{{ url_for('download', filename="test.fa.mp4") }}">mkv file with persian hard sub</a>
+<br><a href="{{ url_for('download', filename="test.fa.txt") }}">Persian txt file (speech to txt)</a>
+<a href="{{ url_for('download', filename="test.en-US.txt") }}">English txt file (speech to txt)</a>
+<br><br><br> <body>
+                <video width="720" controls>
+                    <source src="./uploads/test.fa.mp4" type="video/mp4">
+                </video>
+            </body>
+</center>
+
